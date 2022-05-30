@@ -9,7 +9,7 @@
 ```sh config-file-maker.sh```  
 
 ### run the CV-loop
-```sh runner.sh```  
+```sh train_val_runner.sh```  
 
 ### compile the CV report
 ```sh report-maker.sh```  
