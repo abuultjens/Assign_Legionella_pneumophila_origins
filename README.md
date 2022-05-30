@@ -9,7 +9,7 @@
 ```sh config-file-maker.sh```  
 
 ### run the CV-loop
-```sh train_val_runner.sh```  
+```sh train_val_runner.sh config.csv```  
 
 ### compile the CV report
 ```sh report-maker.sh```  
@@ -30,4 +30,5 @@
 ```tail -n +2 report.csv | grep "MELB-M" | sort -t ',' -k 8 -nr | head -1 | cut -f 1 -d ','```  
 
 ### run model on the clinical test dataset
+```sh test_runner.sh MELB-2018_config.csv```  
 
