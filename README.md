@@ -1,13 +1,10 @@
 # Lpn-paper
 
-## Datasets
+## Scripts
 
-Melb - SBT30  
-A, C, G and H  
+# make the config file
+```sh config-file-maker.sh```  
 
-Essex - SBT1  
-A, B, E, G and H  
-
-NY - SBT1  
-10 clusters  
+# run the CV-loop
+```sh runner.sh```  
 
