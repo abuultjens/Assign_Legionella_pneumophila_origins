@@ -14,5 +14,8 @@
 ### compile the CV report
 ```sh report-maker.sh```  
 
+### determin the best models
+```tail -n +2 report.csv | grep "MELB-A" | sort -t ',' -k 8 -nr | head -1 | cut -f 1 -d ','```  
+
 ### run model on the clinical test dataset
 
