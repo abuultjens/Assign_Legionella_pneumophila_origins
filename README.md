@@ -25,14 +25,22 @@
 
 ### upsample the training data
 ```sh upsample.sh OB_list.txt```  
+runs:  
 ```upsample.py```  
+outfiles:  
+
 
 ### make the config file
 ```sh config-file-maker.sh OB_list.txt k_list.txt model_list.txt class_1_weight_list.txt```  
+outfile:  
+```config.csv```  
 
 ### run the CV-loop on the environmental isolate training dataset
 ```sh train_val_runner.sh config.csv```  
+runs:
 ```ML_train_val.py```  
+outfies:  
+
 
 ### compile the CV report
 ```sh report-maker.sh config.csv```  
