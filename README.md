@@ -37,7 +37,7 @@ command:
 outfile:  
 ```config.csv```  
 
-### run the CV-loop on the environmental isolate training dataset
+### run the cross-validation loop on the environmental isolate training dataset
 command:  
 ```sh train_val_runner.sh config.csv```  
 runs:
@@ -45,7 +45,7 @@ runs:
 outfies:  
 
 
-### compile the train-validation CV report
+### compile the train-validation cross-validation report
 command:  
 ```sh report-maker.sh config.csv```  
 outfile:  
