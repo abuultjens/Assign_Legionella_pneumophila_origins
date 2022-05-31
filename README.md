@@ -40,7 +40,7 @@ outfile:
 ### run the cross-validation loop on the environmental isolate training dataset
 command:  
 ```sh train_val_runner.sh config.csv```  
-runs:
+runs:  
 ```ML_train_val.py```  
 outfies:  
 
@@ -69,4 +69,4 @@ outfile:
 command:  
 ```sh test_report-maker.sh BEST_config.csv```  
 outfile:  
-TEST_report.csv
+```TEST_report.csv```  
