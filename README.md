@@ -72,6 +72,7 @@ sh evaluate-report.sh report.csv
   
 outfile:  
 BEST_MODELS.csv  
+BEST_config.csv  
 ```
  
 ### run the best models on the clinical isolate test dataset 
