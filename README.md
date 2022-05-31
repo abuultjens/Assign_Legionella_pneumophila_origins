@@ -33,7 +33,11 @@ data/target_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv
 ### make the config file
 ```  
 command:  
-sh config-file-maker.sh OB_list.txt k_list.txt model_list.txt class_1_weight_list.txt  
+sh config-file-maker.sh \  
+  OB_list.txt \  
+  k_list.txt \  
+  model_list.txt \  
+  class_1_weight_list.txt  
   
 outfile:  
 config.csv  
