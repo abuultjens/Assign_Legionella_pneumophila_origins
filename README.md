@@ -14,7 +14,7 @@
 ```ML_train_val.py```  
 
 ### compile the CV report
-```sh report-maker.sh```  
+```sh report-maker.sh config.csv```  
 
 ### determin the best models
 
