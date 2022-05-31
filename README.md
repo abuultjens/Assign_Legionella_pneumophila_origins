@@ -27,7 +27,7 @@ class_1_weight_list.txt
 
 ## Scripts
 
-### upsample the training data
+### Upsample the training data
 ```
 command:  
 sh upsample.sh OB_list.txt  
@@ -40,7 +40,7 @@ data/data_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv
 data/target_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
 ```  
 
-### make the config file
+### Make the config file
 ```  
 command:  
 sh config-file-maker.sh \  
@@ -53,7 +53,7 @@ outfile:
 config.csv  
 ```  
 
-### run the cross-validation loop on the environmental isolate training dataset
+### Run the cross-validation loop on the environmental isolate training dataset
 ```command:  
 sh train_val_runner.sh config.csv  
   
@@ -69,8 +69,7 @@ outfies:
   
 ```
 
-
-### compile the training cross-validation report
+### Generate the training cross-validation report
 ```   
 command:  
 sh report-maker.sh config.csv  
@@ -79,7 +78,7 @@ outfile:
 TRAIN_report.csv  
 ```
   
-### determin the best models  
+### Determin the best models for each outbreak group 
 ```  
 command:  
 sh evaluate-report.sh TRAIN_report.csv  
@@ -89,7 +88,7 @@ BEST_MODELS.csv
 BEST_config.csv  
 ```
  
-### run the best models on the clinical isolate test dataset 
+### Run the best models on the clinical isolate test dataset 
 ```  
 command:  
 sh test_runner.sh BEST_config.csv  
@@ -106,8 +105,7 @@ outfile:
   
 ```
 
-
-### compile the test report
+### Generate the test report
 ```  
 command:  
 sh test_report-maker.sh BEST_config.csv  
