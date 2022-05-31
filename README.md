@@ -9,7 +9,7 @@
 ### make the config file
 ```sh config-file-maker.sh```  
 
-### run the CV-loop
+### run the CV-loop on the environmental isolate training dataset
 ```sh train_val_runner.sh config.csv```  
 ```ML_train_val.py```  
 
@@ -19,7 +19,7 @@
 ### determin the best models
 ```sh evaluate-report.sh```  
 
-### run model on the clinical test dataset
+### run model on the clinical isolate test dataset
 ```sh test_runner.sh BEST_config.csv```  
 ```ML_test.py```  
 
