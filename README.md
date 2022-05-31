@@ -9,16 +9,7 @@
 ```data/206-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv```  
 
 ### Target observation label files
-#### ESSEX-A
-```data/target_329_ESSEX-A.csv```  
-#### ESSEX-B
-```data/target_329_ESSEX-B.csv```  
-#### ESSEX-E
-```data/target_329_ESSEX-E.csv```  
-#### ESSEX-G
-```data/target_329_ESSEX-G.csv```  
-#### ESSEX-H
-```data/target_329_ESSEX-H.csv```  
+```data/target_329_[OB].csv```   
 
 
 ## Scripts
