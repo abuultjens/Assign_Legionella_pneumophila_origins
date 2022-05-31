@@ -3,9 +3,11 @@
 ## Data files
 
 ### One-hot encoded matrices
-```environmental isolate training matrix 
+```  
+environmental isolate training matrix  
 data/329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
-#### clinical isolate testing matrix
+  
+clinical isolate testing matrix  
 data/206-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
 ```  
 
@@ -38,35 +40,55 @@ config.csv
 ```  
 
 ### run the cross-validation loop on the environmental isolate training dataset
-command:  
-```sh train_val_runner.sh config.csv```  
+```command:  
+sh train_val_runner.sh config.csv  
+  
 runs:  
-```ML_train_val.py```  
+ML_train_val.py  
+  
 outfies:  
+  
+  
+```
 
 
 ### compile the train-validation cross-validation report
+```   
 command:  
-```sh report-maker.sh config.csv```  
+sh report-maker.sh config.csv  
+  
 outfile:  
-```report.csv```  
+report.csv  
+```
   
 ### determin the best models  
+```  
 command:  
-```sh evaluate-report.sh report.csv```  
+sh evaluate-report.sh report.csv  
+  
 outfile:  
- ```BEST_MODELS.csv```  
+BEST_MODELS.csv  
+```
  
 ### run the best models on the clinical isolate test dataset 
+```  
 command:  
-```sh test_runner.sh BEST_config.csv```  
+sh test_runner.sh BEST_config.csv  
+  
 runs:  
-```ML_test.py```  
+ML_test.py  
+  
 outfile:  
+  
+```
 
 
 ### compile the test report
+```  
 command:  
-```sh test_report-maker.sh BEST_config.csv```  
+sh test_report-maker.sh BEST_config.csv  
+  
 outfile:  
-```TEST_report.csv```  
+TEST_report.csv  
+  
+```
