@@ -19,7 +19,7 @@
 ### determin the best models
 ```sh evaluate-report.sh```  
 
-### run model on the clinical isolate test dataset
+### run best models on the clinical isolate test dataset
 ```sh test_runner.sh BEST_config.csv```  
 ```ML_test.py```  
 
