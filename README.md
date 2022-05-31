@@ -76,13 +76,13 @@ command:
 sh report-maker.sh config.csv  
   
 outfile:  
-report.csv  
+TRAIN_report.csv  
 ```
   
 ### determin the best models  
 ```  
 command:  
-sh evaluate-report.sh report.csv  
+sh evaluate-report.sh TRAIN_report.csv  
   
 outfile:  
 BEST_MODELS.csv  
