@@ -36,11 +36,10 @@
 
 ### compile the CV report
 ```sh report-maker.sh config.csv```  
-
-### determin the best models
+#### outfiles  
+```report.csv```  
+### determin the best models  
 ```sh evaluate-report.sh report.csv```  
-
-### run best models on the clinical isolate test dataset
-```sh test_runner.sh BEST_config.csv```  
-```ML_test.py```  
+#### outfiles  
+ ```BEST_MODELS.csv```  
 
