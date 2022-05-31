@@ -11,6 +11,14 @@
 ### Target observation label files
 #### ESSEX-A
 ```data/target_329_ESSEX-A.csv```  
+#### ESSEX-B
+```data/target_329_ESSEX-B.csv```  
+#### ESSEX-E
+```data/target_329_ESSEX-E.csv```  
+#### ESSEX-G
+```data/target_329_ESSEX-G.csv```  
+#### ESSEX-H
+```data/target_329_ESSEX-H.csv```  
 
 
 ## Scripts
