@@ -45,7 +45,7 @@ runs:
 outfies:  
 
 
-### compile the CV report
+### compile the train-validation CV report
 command:  
 ```sh report-maker.sh config.csv```  
 outfile:  
@@ -56,4 +56,17 @@ command:
 ```sh evaluate-report.sh report.csv```  
 outfile:  
  ```BEST_MODELS.csv```  
+ 
+### run the best models on the clinical isolate test dataset 
+command:  
+```sh test_runner.sh BEST_config.csv```  
+runs:  
+```ML_test.py```  
+outfile:  
 
+
+### compile the test report
+command:  
+```sh test_report-maker.sh BEST_config.csv```  
+outfile:  
+TEST_report.csv
