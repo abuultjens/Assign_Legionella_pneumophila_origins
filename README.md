@@ -78,13 +78,12 @@ outfile:
 TRAIN_report.csv  
 ```
   
-### Determin the best models for each outbreak group 
+### Determine the best models for each outbreak group 
 ```  
 command:  
 sh evaluate-report.sh TRAIN_report.csv  
   
-outfile:  
-BEST_MODELS.csv  
+outfile:   
 BEST_config.csv  
 ```
  
