@@ -36,10 +36,10 @@
 
 ### compile the CV report
 ```sh report-maker.sh config.csv```  
-##### outfiles  
+outfiles  
 ```report.csv```  
 ### determin the best models  
 ```sh evaluate-report.sh report.csv```  
-##### outfiles  
+outfiles  
  ```BEST_MODELS.csv```  
 
