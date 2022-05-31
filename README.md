@@ -3,7 +3,7 @@
 ## Scripts
 
 ### upsample the training data
-```sh upsample.sh```  
+```sh upsample.sh OB_list.txt```  
 ```upsample.py```  
 
 ### make the config file
