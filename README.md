@@ -60,7 +60,7 @@ outfies:
 ```
 
 
-### compile the train-validation cross-validation report
+### compile the training cross-validation report
 ```   
 command:  
 sh report-maker.sh config.csv  
