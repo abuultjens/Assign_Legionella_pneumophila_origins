@@ -3,7 +3,7 @@
 ## Data files
 
 ### One-hot encoded matrices
-#### environmental isolate training matrix
+```environmental isolate training matrix``` 
 ```data/329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv```  
 #### clinical isolate testing matrix
 ```data/206-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv```  
@@ -15,11 +15,11 @@
 ## Scripts
 
 ### upsample the training data
-command:  
+```command:```  
 ```sh upsample.sh OB_list.txt```  
-runs:  
+```runs:```  
 ```upsample.py```  
-outfiles:  
+```outfiles:```  
 ```data/data_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv```  
 ```data/target_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv```  
 
