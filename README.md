@@ -15,13 +15,15 @@ data/329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv```
 ## Scripts
 
 ### upsample the training data
-```command:  
+```
+command:  
 sh upsample.sh OB_list.txt  
 runs:  
 upsample.py   
 outfiles:   
 data/data_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
-data/target_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv```  
+data/target_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
+```  
 
 ### make the config file
 command:  
