@@ -14,6 +14,13 @@ data/206-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv
 ### Target observation label files
 ```data/target_329_[OB].csv```   
 
+### Model parameter lists
+```  
+OB_list.txt  
+k_list.txt  
+model_list.txt  
+class_1_weight_list.txt  
+```      
 
 ## Scripts
 
