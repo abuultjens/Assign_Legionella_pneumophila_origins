@@ -7,7 +7,7 @@
 ```upsample.py```  
 
 ### make the config file
-```sh config-file-maker.sh```  
+```sh config-file-maker.sh OB_list.txt k_list.txt model_list.txt class_1_weight_list.txt```  
 
 ### run the CV-loop on the environmental isolate training dataset
 ```sh train_val_runner.sh config.csv```  
@@ -17,7 +17,7 @@
 ```sh report-maker.sh config.csv```  
 
 ### determin the best models
-```sh evaluate-report.sh```  
+```sh evaluate-report.sh report.csv```  
 
 ### run best models on the clinical isolate test dataset
 ```sh test_runner.sh BEST_config.csv```  
