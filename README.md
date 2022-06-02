@@ -35,7 +35,7 @@ class_1_weight_list.txt
 ## Distance-based classifiers
 ```  
 command:  
-sh sh dist-classify.sh [OB] [matrix.tab]  
+sh dist-classify.sh [OB] [matrix.tab]  
 
 runs:  
 mean.py  
