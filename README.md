@@ -32,6 +32,10 @@ class_1_weight_list.txt
 1, 2, 3, 4, 5  
 ```      
 
+## Dependencies  
+  
+  
+  
 ## Distance-based classifiers
 ```  
 command:  
