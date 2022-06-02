@@ -34,7 +34,11 @@ class_1_weight_list.txt
 
 ## Dependencies  
   
-  
+datamash  
+python  
+numpy  
+pandas  
+sklearn  
   
 ## Distance-based classifiers
 ```  
