@@ -17,20 +17,11 @@ data/206-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv
 ### Target observation label files
 ```data/target_329_[OB].csv```   
 
-### Model parameter lists
+### Outbreak group name file
 ```  
 OB_list.txt  
 ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-3, NY-4, NY-5, NY-6, NY-7, NY-8, NY-9, NY-10  
-  
-k_list.txt  
-50, 500, 5000, all  
-  
-model_list.txt  
-SVC-linear, SVC-rbf, SVC-poly, SVC-sigmoid, RFC  
-  
-class_1_weight_list.txt  
-1, 2, 3, 4, 5  
-```      
+```    
 
 ## Dependencies  
   
@@ -56,6 +47,21 @@ outfiles:
 
 ## Machine learning classifiers
 
+### Model parameter lists
+```  
+OB_list.txt  
+ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-3, NY-4, NY-5, NY-6, NY-7, NY-8, NY-9, NY-10  
+  
+k_list.txt  
+50, 500, 5000, all  
+  
+model_list.txt  
+SVC-linear, SVC-rbf, SVC-poly, SVC-sigmoid, RFC  
+  
+class_1_weight_list.txt  
+1, 2, 3, 4, 5  
+```     
+  
 ### Upsample the training data
 ```
 command:  
