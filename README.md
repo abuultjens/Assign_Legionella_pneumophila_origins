@@ -46,7 +46,7 @@ outfiles:
 ```
 
 
-## Scripts
+## Machine learning classifiers
 
 ### Upsample the training data
 ```
