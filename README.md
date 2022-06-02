@@ -32,6 +32,20 @@ class_1_weight_list.txt
 1, 2, 3, 4, 5  
 ```      
 
+## Distance-based classifiers
+```  
+command:  
+sh sh dist-classify.sh [OB] [matrix.tab]  
+
+runs:  
+mean.py  
+gt.py  
+  
+outfiles:  
+  
+```
+
+
 ## Scripts
 
 ### Upsample the training data
