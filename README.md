@@ -73,7 +73,7 @@ outfies:
 ### Generate the training cross-validation report
 ```   
 command:  
-sh report-maker.sh config.csv  
+sh train_report-maker.sh config.csv  
   
 outfile:  
 TRAIN_report.csv  
