@@ -32,6 +32,9 @@ pandas
 sklearn  
   
 ## Distance-based classifiers
+  
+### Run classifiers
+  
 ```  
 command:  
 sh dist-classify.sh [OB] [matrix.tab]  
@@ -43,8 +46,19 @@ gt.py
 outfiles:  
   
 ```
-
-
+  
+### Generate classification report  
+  
+```
+command:  
+sh dist_report-maker.sh OB_list_TMP.txt [PREFIX]  
+  
+outfiles:  
+[PREFIX]_DIST_report.csv  
+  
+```
+  
+  
 ## Machine learning classifiers
 
 ### Model parameter lists
