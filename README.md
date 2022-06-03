@@ -28,11 +28,11 @@ ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, 
 
 ## Dependencies  
   
-datamash  
-python  
-numpy  
-pandas  
-sklearn  
+python 3.7.4   
+datamash 1.7  
+numpy 1.17.3  
+pandas 0.25.3    
+sklearn 0.23.1  
   
 ## Distance-based classifiers
   
