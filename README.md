@@ -21,6 +21,9 @@ data/206-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv
 ```  
 OB_list.txt  
 ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-3, NY-4, NY-5, NY-6, NY-7, NY-8, NY-9, NY-10  
+  
+OB_list_min-2-env.txt  
+ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-6, NY-9  
 ```    
 
 ## Dependencies  
@@ -37,7 +40,7 @@ sklearn
   
 ```  
 command:  
-sh dist-classify.sh [OB] [matrix.tab]  
+sh dist-classify.sh OB_list_min-2-env.txt [matrix.tab]  
 
 runs:  
 mean.py  
