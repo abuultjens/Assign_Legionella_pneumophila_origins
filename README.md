@@ -40,7 +40,7 @@ sklearn 0.23.1
   
 ```  
 command:  
-sh dist-classify.sh OB_list_min-2-env.txt [matrix.tab]  
+sh dist-classify.sh OB_list_min-2-env.txt [PREFIX] [matrix.tab]  
 
 runs:  
 mean.py  
