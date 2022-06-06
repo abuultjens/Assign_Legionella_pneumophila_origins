@@ -39,7 +39,7 @@ for TAXA in $(cat ${RAND}_rest.txt); do
 done
 
 # calculate the mean dist among the environmental isolates for a OB group
-python mean.py ${OB}_DIST.csv ${OB}
+python mean.py ${OB}_DIST.csv ${OB}_${PREFIX}
 
 grep ",1" data/target_329_${OB}.csv | cut -f 1 -d ',' > ${RAND}_fofn.txt
 
@@ -57,7 +57,7 @@ cut -f 1 -d ',' data/target_205_${OB}.csv | tail -n +2 > ${RAND}_fofn.txt
 # loop through and compare the smallest dist of each clinical isolate to the OB environmental isolates
 for TAXA in $(cat ${RAND}_fofn.txt); do
 	SMALLEST_DIST=`grep "${TAXA}$(printf '\t')" ${RAND}_file.tr.txt | tr '\t' '\n' | tail -n +2 | sort -n | head -1`
-	THRESHOLD=`cat ${OB}_mean.csv`
+	THRESHOLD=`cat ${OB}_${PREFIX}_mean.csv`
 	GT=`python gt.py ${SMALLEST_DIST} ${THRESHOLD}`
 	echo "${TAXA},${SMALLEST_DIST},${THRESHOLD},${GT}" >> ${RAND}_${OB}_SMALLEST_DIST_TMP.csv	
 done
