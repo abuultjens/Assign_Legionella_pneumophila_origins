@@ -10,14 +10,14 @@
 # uncompress spatial data folders  
 cd data/  
 gunzip 329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
-gunzip 206-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
+gunzip 205-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
 cd ../ 
   
 environmental isolate training matrix  
 data/329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
   
 clinical isolate testing matrix  
-data/206-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
+data/205-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
 ```  
 
 ### Target observation label files
