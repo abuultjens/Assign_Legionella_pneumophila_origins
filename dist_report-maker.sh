@@ -3,17 +3,6 @@
 OB_file=$1
 PREFIX=$2
 
-# rm existing outfile
-if ls ${PREFIX}_DIST_report.csv 1> /dev/null 2>&1; then
-	rm ${PREFIX}_DIST_report.csv
-fi
-
-# generate random prefix for all tmp files
-RAND_1=`echo $((1 + RANDOM % 100))`
-RAND_2=`echo $((100 + RANDOM % 200))`
-RAND_3=`echo $((200 + RANDOM % 300))`
-RAND=`echo "${RAND_1}${RAND_2}${RAND_3}"`
-
 # write report header
 echo "PREFIX,TP_dist,TN_dist,FP_dist,FN_dist,f1_dist" > ${PREFIX}_DIST_report.csv
 
@@ -32,5 +21,3 @@ for OB in $(cat OB_file); do
 
 done
 
-# rm tmp files
-rm ${RAND}_*
