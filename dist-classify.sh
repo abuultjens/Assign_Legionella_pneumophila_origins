@@ -69,7 +69,7 @@ cut -f 2 -d ',' data/target_205_${OB}.csv | tail -n +2 > ${RAND}_ORIGINAL_class.
 paste ${RAND}_${OB}_SMALLEST_DIST_TMP.csv ${RAND}_ORIGINAL_class.csv | tr '\t' ',' >> ${OB}_${PREFIX}_SMALLEST_DIST.csv
 
 # calculate CM and F1
-python evaluate.py ${OB}_{PREFIX}_SMALLEST_DIST.csv ${OB}_${PREFIX}
+python evaluate.py ${OB}_${PREFIX}_SMALLEST_DIST.csv ${OB}_${PREFIX}
 
 done
 
