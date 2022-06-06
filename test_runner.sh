@@ -1,14 +1,6 @@
 #!/bin/bash
 
 
-source /usr/local/module/spartan_new.sh
-# keras
-module load foss/2019b keras/2.3.1-python-3.7.4 
-# scikit-learn
-module load foss/2019b scikit-learn/0.23.1-python-3.7.4 
-# numpy
-module load foss/2019b numpy/1.17.3-python-3.7.4
-
 # generate random prefix for all tmp files
 RAND_1=`echo $((1 + RANDOM % 100))`
 RAND_2=`echo $((100 + RANDOM % 200))`
@@ -32,8 +24,8 @@ for LINE in $(cat ${RAND}_seq.txt); do
 	class_1_weight=`head -${LINE} ${CONFIG} | tail -1 | cut -f 8 -d ','`
 	PREFIX=`head -${LINE} ${CONFIG} | tail -1 | cut -f 9 -d ','`
 	
-#	sh test.slurm ${OB} ${train_data} ${train_target} ${test_data} ${test_target} ${k} ${model} ${class_1_weight} ${PREFIX}
-
+	echo "RUNNING: ${PREFIX}"
+	
 	python ML_test.py \
         	${train_data} \
         	${train_target} \
