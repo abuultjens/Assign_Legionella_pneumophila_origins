@@ -33,4 +33,4 @@ for OB in $(cat OB_file); do
 done
 
 # rm tmp files
-rm ${PREFIX}_*
+rm ${RAND}_*
