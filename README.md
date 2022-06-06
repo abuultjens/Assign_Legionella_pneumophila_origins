@@ -58,7 +58,8 @@ mean.py
 gt.py  
   
 outfiles:  
-  
+[OB]_[PREFIX]_confusion_matrix_dist.csv  
+[OB]_[PREFIX]_f1_score_dist.csv  
 ```
   
 ### Generate classification report  
