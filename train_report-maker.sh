@@ -34,3 +34,6 @@ for TAXA in $(cat ${RAND}_prefix.txt); do
 	fi
 
 done
+
+rm ${RAND}_*
+
