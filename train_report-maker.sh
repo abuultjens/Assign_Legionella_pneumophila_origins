@@ -27,8 +27,9 @@ for TAXA in $(cat ${RAND}_prefix.txt); do
 	recall_val=`cat ${PREFIX}_recall_score_val.csv`
 	f1_val=`cat ${PREFIX}_f1_score_val.csv`
 	AUC_val=`cat ${PREFIX}_AUC_val.csv`
-
-	echo "${PREFIX},${TP_val},${TN_val},${FP_val},${FN_val},${precision_val},${recall_val},${f1_val},${AUC_val}" >> TRAIN_report.csv
-
+	
+	if ls ${PREFIX}_confusion_matrix_val.csv 1> /dev/null 2>&1; then
+		echo "${PREFIX},${TP_val},${TN_val},${FP_val},${FN_val},${precision_val},${recall_val},${f1_val},${AUC_val}" >> TRAIN_report.csv
+	fi
 
 done
