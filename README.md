@@ -8,16 +8,11 @@
 ### Distance-based matrices  
 ```  
 data/534_coreugate_FST-0.85_pad.tab  
+data/534_PatristicDistMatrix.tab  
 ```  
   
 ### One-hot encoded matrices
 ```  
-# uncompress spatial data folders  
-cd data/  
-gunzip 329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
-gunzip 205-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
-cd ../ 
-  
 environmental isolate training matrix  
 data/329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
   
@@ -38,17 +33,17 @@ ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, 
 ```    
 
 ## Dependencies  
-  
+```  
 python 3.7.4   
 datamash 1.7  
 numpy 1.17.3  
 pandas 0.25.3    
 sklearn 0.23.1  
-  
+```  
+
 ## Distance-based classifiers
   
 ### Run classifiers
-  
 ```  
 command:  
 sh dist-classify.sh OB_list_min-2-env.txt [PREFIX] [matrix.tab]  
@@ -63,7 +58,6 @@ outfiles:
 ```
   
 ### Generate classification report  
-  
 ```
 command:  
 sh dist_report-maker.sh OB_list_min-2-env.txt [PREFIX]  
@@ -73,9 +67,13 @@ outfiles:
   
 ```
   
-  
 ## Machine learning classifiers
-
+```  
+# uncompress files  
+gunzip data/329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
+gunzip data/205-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
+```
+  
 ### Model parameter lists
 ```  
 OB_list.txt  
