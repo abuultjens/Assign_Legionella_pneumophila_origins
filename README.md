@@ -5,6 +5,11 @@
 
 ## Data files
 
+### Distance-based matrices  
+```  
+data/534_coreugate_FST-0.85_pad.tab  
+```  
+  
 ### One-hot encoded matrices
 ```  
 # uncompress spatial data folders  
