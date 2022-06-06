@@ -65,7 +65,7 @@ outfiles:
   
 ```
 command:  
-sh dist_report-maker.sh OB_list_TMP.txt [PREFIX]  
+sh dist_report-maker.sh OB_list_min-2-env.txt [PREFIX]  
   
 outfiles:  
 [PREFIX]_DIST_report.csv  
