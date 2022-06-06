@@ -1,12 +1,12 @@
 #!/bin/bash
 
-OB_file=$1
+
 PREFIX=$2
 
 # write report header
 echo "PREFIX,TP_dist,TN_dist,FP_dist,FN_dist,f1_dist" > ${PREFIX}_DIST_report.csv
 
-for OB in $(cat OB_file); do
+for OB in $(cat $1); do
 
 	NAME=${OB}_${PREFIX}
 
