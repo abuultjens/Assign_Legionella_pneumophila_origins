@@ -94,8 +94,8 @@ runs:
 upsample.py   
   
 outfiles:   
-data/data_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
-data/target_329-535_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
+data/data_329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
+data/target_329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
 ```  
 
 ### Make the config file
@@ -120,11 +120,11 @@ runs:
 ML_train_val.py  
   
 outfies:  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_AUC_val.csv  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_confusion_matrix_val.csv  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_f1_score_val.csv  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_precision_score_val.csv  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_recall_score_val.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_AUC_val.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_confusion_matrix_val.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_f1_score_val.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_precision_score_val.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_recall_score_val.csv  
   
 ```
 
@@ -155,11 +155,11 @@ runs:
 ML_test.py  
   
 outfile:  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_AUC_test.csv  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_confusion_matrix_test.csv  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_f1_score_test.csv  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_precision_score_test.csv  
-[OB]_535_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_recall_score_test.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_AUC_test.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_confusion_matrix_test.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_f1_score_test.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_precision_score_test.csv  
+[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_recall_score_test.csv  
   
 ```
 
