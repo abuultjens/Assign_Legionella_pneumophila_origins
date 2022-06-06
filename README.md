@@ -9,8 +9,8 @@
 ```  
 # uncompress spatial data folders  
 cd data/  
-tar -xf 329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
-tar -xf 206-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
+gunzip 329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
+gunzip 206-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
 cd ../ 
   
 environmental isolate training matrix  
