@@ -18,7 +18,11 @@ REPORT=$1
 for OB in $(cat OB_list.txt); do
 
 	BEST=`tail -n +2 ${REPORT} | grep "${OB}" | sort -t ',' -k 8 -nr | head -1 | cut -f 1 -d ','`
-	grep "${BEST}"$ config.csv >> BEST_config.csv
+	WC=`echo $BEST | grep "model" | wc -l`
+	
+	if [ "$WC" == "1" ]; then
+		grep "${BEST}"$ config.csv >> BEST_config.csv
+	fi
 
 done
 
