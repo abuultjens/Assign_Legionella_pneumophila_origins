@@ -67,7 +67,10 @@ outfiles:
   
 ```
   
-## Machine learning classifiers
+## Machine learning classifiers  
+  
+These scripts are presented here in a serial manner to improve comprehension of the analytical pipeline. Several of the following steps can be greatly sped up by running in parallel. If running on a HPC system, it is recommended that upsample.sh and train_val_runner.sh are run in parallel.
+  
 ```  
 # uncompress files  
 gunzip data/329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
