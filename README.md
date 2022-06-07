@@ -2,9 +2,10 @@
 
 ## About
 
-
+These scripts are presented here in a serial manner to improve comprehension of the analytical pipeline. Several of the following steps can be greatly sped up by running in parallel. If running on a HPC system, it is recommended that dist-classify.sh, upsample.sh and train_val_runner.sh are run in parallel.
+  
 ## Data files
-
+  
 ### Distance-based matrices  
 ```  
 data/534_coreugate_FST-0.85_pad.tab  
@@ -67,10 +68,7 @@ outfiles:
   
 ```
   
-## Machine learning classifiers  
-  
-These scripts are presented here in a serial manner to improve comprehension of the analytical pipeline. Several of the following steps can be greatly sped up by running in parallel. If running on a HPC system, it is recommended that upsample.sh and train_val_runner.sh are run in parallel.
-  
+## Machine learning classifiers   
 ```  
 # uncompress files  
 gunzip data/329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
