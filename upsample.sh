@@ -1,17 +1,11 @@
 #!/bin/bash
 
 
-source /usr/local/module/spartan_new.sh
-# keras
-module load foss/2019b keras/2.3.1-python-3.7.4 
-# scikit-learn
-module load foss/2019b scikit-learn/0.23.1-python-3.7.4 
-# numpy
-module load foss/2019b numpy/1.17.3-python-3.7.4
-
 for OB in $(cat $1); do
 
 	US=100
+	
+	echo "UPSAMPLING: ${OB}"
 
 	python upsample.py \
 		data/target_329_${OB}.csv \
