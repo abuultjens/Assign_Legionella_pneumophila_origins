@@ -8,17 +8,17 @@ These scripts are presented here in a serial manner to improve comprehension of 
   
 ### Distance-based matrices  
 ```  
-data/534_coreugate_FST-0.85_pad.tab  
-data/534_PatristicDistMatrix.tab  
+data/442_coreugate_FST-0.85_pad.tab  
+data/442_PatristicDistMatrix.tab  
 ```  
   
 ### One-hot encoded matrices
 ```  
 environmental isolate training matrix  
-data/329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
+data/329-442_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
   
 clinical isolate testing matrix  
-data/205-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
+data/113-442_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv  
 ```  
 
 ### Target observation label files
@@ -71,8 +71,8 @@ outfiles:
 ## Machine learning classifiers   
 ```  
 # uncompress files  
-gunzip data/329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
-gunzip data/205-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
+gunzip data/329-442_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
+gunzip data/113-442_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE.csv.gz  
 ```
   
 ### Model parameter lists
@@ -99,8 +99,8 @@ runs:
 upsample.py   
   
 outfiles:   
-data/data_329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
-data/target_329-534_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
+data/data_329-442_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
+data/target_329-442_SKA_align_m-0.1_k-15_p-0.1_CLIPPED_OHE_[OB]_US-100.csv  
 ```  
 
 ### Make the config file
@@ -125,11 +125,11 @@ runs:
 ML_train_val.py  
   
 outfies:  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_AUC_val.csv  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_confusion_matrix_val.csv  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_f1_score_val.csv  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_precision_score_val.csv  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_recall_score_val.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_AUC_val.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_confusion_matrix_val.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_f1_score_val.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_precision_score_val.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_recall_score_val.csv  
   
 ```
 
@@ -160,11 +160,11 @@ runs:
 ML_test.py  
   
 outfile:  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_AUC_test.csv  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_confusion_matrix_test.csv  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_f1_score_test.csv  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_precision_score_test.csv  
-[OB]_534_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_recall_score_test.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_AUC_test.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_confusion_matrix_test.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_f1_score_test.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_precision_score_test.csv  
+[OB]_442_SKA_align_m-0.1_k-15_p-0.1.CLIPPED.OHE_US-100_VAL-0.8_k-[k]_model-[model]_class_1_weight-[weight]_recall_score_test.csv  
   
 ```
 
