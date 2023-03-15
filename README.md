@@ -4,7 +4,22 @@
 
 These scripts are presented here in a serial manner to improve comprehension of the analytical pipeline. Several of the following steps can be greatly sped up by running in parallel. If running on a HPC system, it is recommended that train_val_runner.sh is run in parallel (see below).
   
-## Data files
+## Data files  
+  
+### Outbreak group name file
+```  
+OB_list.txt  
+ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-3, NY-4, NY-5, NY-6, NY-7, NY-8, NY-9, NY-10  
+  
+OB_list_min-2-env.txt  
+ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-6, NY-9  
+```    
+  
+### Target observation label files  
+```  
+data/target_421_[OB].csv  
+data/target_113_[OB].csv  
+```   
   
 ### Distance-based matrices  
 ```  
@@ -20,22 +35,7 @@ data/421-534_SKA_align_m-0.2_k-15_p-0.1.OHE.csv
 clinical isolate testing matrix  
 data/113-534_SKA_align_m-0.2_k-15_p-0.1.OHE.csv  
 ```  
-
-### Target observation label files
-```  
-data/target_421_[OB].csv  
-data/target_113_[OB].csv  
-```   
-
-### Outbreak group name file
-```  
-OB_list.txt  
-ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-3, NY-4, NY-5, NY-6, NY-7, NY-8, NY-9, NY-10  
   
-OB_list_min-2-env.txt  
-ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-6, NY-9  
-```    
-
 ## Dependencies  
 ```  
 python 3.7.4   
@@ -44,10 +44,10 @@ numpy 1.17.3
 pandas 0.25.3    
 sklearn 0.23.1  
 ```  
-
-## Distance-based classifiers
   
-### Run classifiers
+## Distance-based classifiers  
+  
+### Run classifiers  
 ```  
 command:  
 sh dist-classify.sh OB_list_min-2-env.txt [PREFIX] [matrix.tab]  
