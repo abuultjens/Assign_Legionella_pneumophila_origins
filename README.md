@@ -4,6 +4,15 @@
 
 These scripts are presented here in a serial manner to improve comprehension of the analytical pipeline. Several of the following steps can be greatly sped up by running in parallel. If running on a HPC system, it is recommended that train_val_runner.sh is run in parallel (see below).
   
+## Dependencies  
+```  
+python 3.7.4   
+datamash 1.7  
+numpy 1.17.3  
+pandas 0.25.3    
+sklearn 0.23.1  
+```  
+  
 ## Data files  
   
 ### Outbreak group name file
@@ -34,15 +43,6 @@ data/421-534_SKA_align_m-0.2_k-15_p-0.1.OHE.csv
   
 clinical isolate testing matrix  
 data/113-534_SKA_align_m-0.2_k-15_p-0.1.OHE.csv  
-```  
-  
-## Dependencies  
-```  
-python 3.7.4   
-datamash 1.7  
-numpy 1.17.3  
-pandas 0.25.3    
-sklearn 0.23.1  
 ```  
   
 ## Distance-based classifiers  
