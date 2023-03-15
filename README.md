@@ -53,6 +53,7 @@ sh dist-classify.sh OB_list_min-2-env.txt [PREFIX] [matrix.tab]
 runs:  
 mean.py  
 gt.py  
+evaluate.py  
   
 outfiles:  
 [OB]_[PREFIX]_confusion_matrix_dist.csv  
