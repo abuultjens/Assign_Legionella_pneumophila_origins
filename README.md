@@ -118,7 +118,7 @@ outfile:
 config.csv  
 ```  
 
-### Run the cross-validation loop on the environmental isolate training dataset  
+### Run the cross-validation loop on the environmental isolate training dataset [one at a time]  
 ```  
 command:  
 sh train_val_runner.sh config.csv  
