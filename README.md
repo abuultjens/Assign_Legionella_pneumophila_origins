@@ -135,6 +135,18 @@ outfies:
   
 ```
 
+### Run the cross-validation loop on the environmental isolate training dataset [in parallel]  
+```  
+split up the config file into a single line per file:  
+split -d -l 1 config.csv CONFIG_:  
+  
+make a file of file names to run:  
+ls CONFIG_* > config_fofn.txt  
+  
+command:  
+sh parallel.sh [config_fofn.txt] [n-processes]  
+```  
+  
 ### Generate the training cross-validation report
 ```   
 command:  
@@ -152,7 +164,7 @@ sh evaluate-report.sh TRAIN_report.csv
 outfile:   
 BEST_config.csv  
 ```
- 
+  
 ### Run the best models on the clinical isolate test dataset 
 ```  
 command:  
