@@ -29,9 +29,8 @@ for TAXA in $(cat ${RAND}_prefix.txt); do
 		recall_val=`cat ${PREFIX}_recall_score_val.csv`
 		f1_val=`cat ${PREFIX}_f1_score_val.csv`
 		AUC_val=`cat ${PREFIX}_AUC_val.csv`
-		RANK_val=`grep "ALL" ${PREFIX}_RANK_val.csv | head -1 | cut -f 1 -d ','`
 	
-		echo "${PREFIX},${TP_val},${TN_val},${FP_val},${FN_val},${precision_val},${recall_val},${f1_val},${AUC_val},${RANK_val}" >> TRAIN_report.csv
+		echo "${PREFIX},${TP_val},${TN_val},${FP_val},${FN_val},${precision_val},${recall_val},${f1_val},${AUC_val}" >> TRAIN_report.csv
 #	fi
 
 done
