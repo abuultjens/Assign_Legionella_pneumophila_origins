@@ -1,5 +1,0 @@
-SVC-linear
-SVC-rbf
-SVC-poly
-SVC-sigmoid
-RFC
