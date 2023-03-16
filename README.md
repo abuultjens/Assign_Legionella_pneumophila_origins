@@ -106,20 +106,7 @@ outfiles:
 data/data_421-534_SKA_align_m-0.2_k-15_p-0.1_OHE_[OB]_US-100.csv  
 data/target_421-534_SKA_align_m-0.2_k-15_p-0.1_OHE_[OB]_US-100.csv  
 ```  
-
-### Make the config file
-```  
-command:  
-sh config-file-maker.sh \  
-      OB_list.txt \  
-      k_list.txt \  
-      model_list.txt \  
-      class_1_weight_list.txt  
   
-outfile:  
-config.csv  
-```  
-
 ### Run the cross-validation loop on the environmental isolate training dataset [one at a time]  
 ```  
 command:  
