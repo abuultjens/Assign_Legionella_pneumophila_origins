@@ -140,7 +140,7 @@ outfies:
 ### Run the cross-validation loop on the environmental isolate training dataset [in parallel]  
 ```  
 split up the config file into a single line per file:  
-split -d -l 1 config.csv CONFIG_:  
+split -d -l 1 config.csv CONFIG_  
   
 make a file of file names to run:  
 ls CONFIG_* > config_fofn.txt  
