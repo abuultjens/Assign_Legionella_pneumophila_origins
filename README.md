@@ -59,7 +59,14 @@ evaluate.py
   
 outfiles:  
 [OB]_[PREFIX]_confusion_matrix_dist.csv  
-[OB]_[PREFIX]_f1_score_dist.csv  
+[OB]_[PREFIX]_f1_score_dist.csv
+
+# run on cgMLST matrix
+sh dist-classify.sh OB_list_min-2-env.txt 534_coreugate_FST-0.85_pad_dist-classify data/534_coreugate_FST-0.85_pad.tab
+
+# run on Patristic distance matrix
+sh dist-classify.sh OB_list_min-2-env.txt 534_PatristicDistMatrix_dist-classify data/534_PatristicDistMatrix.tab
+
 ```
   
 ### Generate classification report  
