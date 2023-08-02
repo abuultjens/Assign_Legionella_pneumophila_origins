@@ -75,8 +75,14 @@ command:
 sh dist_report-maker.sh OB_list_min-2-env.txt [PREFIX]  
   
 outfiles:  
-[PREFIX]_DIST_report.csv  
-  
+[PREFIX]_DIST_report.csv
+
+# run on cgMLST matrix
+sh dist_report-maker.sh OB_list_min-2-env.txt 534_coreugate_FST-0.85_pad_dist-classify  
+
+# run on Patristic distance matrix   
+sh dist_report-maker.sh OB_list_min-2-env.txt 534_PatristicDistMatrix_dist-classify
+
 ```
   
 ## Machine learning classifiers   
