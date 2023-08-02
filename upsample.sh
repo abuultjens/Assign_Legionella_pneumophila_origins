@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# spartan parameters:
 #SBATCH --time 00:50:00
 #SBATCH -A punim0927
 #SBATCH -p physical
@@ -8,13 +8,14 @@
 #SBATCH --ntasks=1
 #SBATCH --mem 20G
 
-source /usr/local/module/spartan_new.sh
+# load spartan modules:
+#source /usr/local/module/spartan_new.sh
 # keras
-module load foss/2019b keras/2.3.1-python-3.7.4 
+#module load foss/2019b keras/2.3.1-python-3.7.4 
 # scikit-learn
-module load foss/2019b scikit-learn/0.23.1-python-3.7.4 
+#module load foss/2019b scikit-learn/0.23.1-python-3.7.4 
 # numpy
-module load foss/2019b numpy/1.17.3-python-3.7.4
+#module load foss/2019b numpy/1.17.3-python-3.7.4
 
 
 for OB in $(cat $1); do
