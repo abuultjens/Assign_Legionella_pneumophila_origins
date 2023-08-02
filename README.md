@@ -85,7 +85,7 @@ OB_list.txt
 ESSEX-A, ESSEX-B, ESSEX-E, ESSEX-G, ESSEX-H, MELB-2018, MELB-A, MELB-C, MELB-G, MELB-M, NY-1, NY-2, NY-3, NY-4, NY-5, NY-6, NY-7, NY-8, NY-9, NY-10  
   
 k_list.txt  
-50, 500, 5000, all  
+50, 5000, all  
   
 model_list.txt  
 SVC-linear, SVC-rbf, SVC-poly, SVC-sigmoid, RFC  
