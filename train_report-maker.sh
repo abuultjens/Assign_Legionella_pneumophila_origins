@@ -8,7 +8,7 @@ RAND_3=`echo $((200 + RANDOM % 300))`
 RAND=`echo "${RAND_1}${RAND_2}${RAND_3}"`
 
 # write report header
-echo "PREFIX,TP_val,TN_val,FP_val,FN_val,precision_val,recall_val,f1_val,AUC_val,RANK_val" > TRAIN_report.csv
+echo "PREFIX,TP_val,TN_val,FP_val,FN_val,precision_val,recall_val,f1_val,AUC_val" > TRAIN_report.csv
 
 CONFIG=$1
 
