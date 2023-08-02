@@ -8,7 +8,7 @@ RAND_3=`echo $((200 + RANDOM % 300))`
 RAND=`echo "${RAND_1}${RAND_2}${RAND_3}"`
 
 # write report header
-echo "PREFIX,TP_test,TN_test,FP_test,FN_test,precision_test,recall_test,f1_test,AUC_test,RANK_test" > TEST_report.csv
+echo "PREFIX,TP_test,TN_test,FP_test,FN_test,precision_test,recall_test,f1_test,AUC_test" > TEST_report.csv
 
 CONFIG=$1
 
@@ -27,38 +27,11 @@ for TAXA in $(cat ${RAND}_prefix.txt); do
         recall_test=`cat ${PREFIX}_recall_score_test.csv`
         f1_test=`cat ${PREFIX}_f1_score_test.csv`
 	AUC_test=`cat ${PREFIX}_AUC_test.csv`
-	RANK_test=`grep "ALL" ${PREFIX}_RANK_test.csv | head -1 | cut -f 1 -d ','`
 
-	echo "${PREFIX},${TP_test},${TN_test},${FP_test},${FN_test},${precision_test},${recall_test},${f1_test},${AUC_test},${RANK_test}" >> TEST_report.csv
+	echo "${PREFIX},${TP_test},${TN_test},${FP_test},${FN_test},${precision_test},${recall_test},${f1_test},${AUC_test}" >> TEST_report.csv
 
 
-done
-
-#mv report.csv ${RUN}.report.csv
-#mv config.csv ${RUN}.config.csv
-
-# make dir for run
-#mkdir RUN_${RUN}
-
-# make dir for run reports
-#mkdir ${RUN}_REPORT
-#mv ${RUN}.report.csv ${RUN}_REPORT
-
-# make reports for each OB 
-#REPORT=${RUN}.report.csv
-#head -1 ${RUN}_REPORT/${REPORT} > ${RUN}_REPORT/SUMMARY_${REPORT}
-#for TAXA in $(cat OB_list.txt); do
-#        head -1 ${RUN}_REPORT/${REPORT} > ${RUN}_REPORT/${RUN}.report.${TAXA}.csv
-#        grep ^"${TAXA}_" ${RUN}_REPORT/${REPORT} >> ${RUN}_REPORT/${RUN}.report.${TAXA}.csv
-#	
-#	tail -n +2 ${RUN}_REPORT/${RUN}.report.${TAXA}.csv | tr ',' '\t' | sort -k8r | tr '\t' ',' | head -5 >> ${RUN}_REPORT/SUMMARY_${REPORT} 
-#
-#done
-
-# mv files to run dir
-#mv *${RUN}*.csv RUN_${RUN}
-#mv ${RUN}_REPORT RUN_${RUN}		
-#rm *.out		
+done	
 
 rm ${RAND}_prefix.txt
 
