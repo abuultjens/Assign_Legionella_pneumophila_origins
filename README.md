@@ -1,8 +1,8 @@
-# Lpn-paper
+# Machine learning to assign _Legionella pneumophila_ origins
 
 ## About
 
-These scripts are presented here in a serial manner to improve comprehension of the analytical pipeline. Several of the following steps can be greatly sped up by running in parallel. If running on a HPC system, it is recommended that train_val_runner.sh is run in parallel (see below).
+Collection of scripts that train and optimise machine learning models using environmental isolate genomes to then predict the origins of Legionaries’ disease infections. The scripts are presented here in a serial manner to improve comprehension of the analytical pipeline. Several of the following steps can be greatly sped up by running in parallel. If running on a HPC system, it is recommended that train_val_runner.sh is run in parallel (see below).
   
 ## Dependencies  
 ```  
