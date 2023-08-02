@@ -4,7 +4,7 @@
 PREFIX=$2
 
 # write report header
-echo "PREFIX,TP_dist,TN_dist,FP_dist,FN_dist,f1_dist,AUC_dist,RANK_dist" > ${PREFIX}_DIST_report.csv
+echo "PREFIX,TP_dist,TN_dist,FP_dist,FN_dist,f1_dist,AUC_dist" > ${PREFIX}_DIST_report.csv
 
 for OB in $(cat $1); do
 
@@ -17,7 +17,7 @@ for OB in $(cat $1); do
         f1_dist=`cat ${NAME}_f1_score_dist.csv`
 	auc_dist=`cat ${NAME}_auc_dist.csv`
 
-	echo "${NAME},${TP_dist},${TN_dist},${FP_dist},${FN_dist},${f1_dist},${auc_dist},${rank_dist}" >> ${PREFIX}_DIST_report.csv
+	echo "${NAME},${TP_dist},${TN_dist},${FP_dist},${FN_dist},${f1_dist},${auc_dist}" >> ${PREFIX}_DIST_report.csv
 
 
 done
