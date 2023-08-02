@@ -1,4 +1,4 @@
-# Machine learning to assign _Legionella pneumophila_ origins
+# Machine learning to assign origins to Legionaries’ disease infections
 
 ## About
 
