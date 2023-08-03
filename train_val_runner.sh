@@ -45,8 +45,6 @@ for LINE in $(cat ${RAND}_seq.txt); do
 	
 	echo "RUNNING: ${PREFIX}"
 
-#	python train_rank.py ${PREFIX}
-
 	python ML_train_val.py \
         	${train_data} \
         	${train_target} \
@@ -57,20 +55,6 @@ for LINE in $(cat ${RAND}_seq.txt); do
         	${model} \
         	0.5 \
         	${class_1_weight}
-
-#	python test_rank.py ${PREFIX}
-
-        python ML_test.py \
-                ${train_data} \
-                ${train_target} \
-                ${test_data} \
-                ${test_target} \
-                ${PREFIX} \
-                ${k} \
-                ${model} \
-                0.5 \
-                ${class_1_weight}
-
 
 done
 
